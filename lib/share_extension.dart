@@ -21,7 +21,7 @@ TextStyle urlSiteNameStyle = TextStyle(fontSize: 14,color: primaryColor,);
 typedef DonePressed = void Function(List<SharedMediaFile>? _sharedFiles, String? _sharedText, List<String> _sharedLinks);
 typedef CancelPressed = void Function();
 
-class ShareExtensionFlutter extends StatefulWidget {
+class ShareExtension extends StatefulWidget {
 
   final bool shouldShowAppBar;
   final String appBarTitle;
@@ -38,7 +38,7 @@ class ShareExtensionFlutter extends StatefulWidget {
   final TextStyle? urlSiteNameStyle;
   final Size size;
 
-  ShareExtensionFlutter({Key? key,
+  ShareExtension({Key? key,
     this.shouldShowAppBar = false,
     this.appBarTitle = '',
     this.onDonePressed,
@@ -59,7 +59,7 @@ class ShareExtensionFlutter extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<ShareExtensionFlutter> {
+class _MyAppState extends State<ShareExtension> {
   Size _screen = Size.zero;
   late StreamSubscription _intentDataStreamSubscription;
   List<SharedMediaFile>? _sharedFiles;

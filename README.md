@@ -50,15 +50,15 @@ Because the album is a privacy privilege, you need user permission to access it.
 
 dependencies:
 ``` 
- share_extension_flutter:  
+ flutter_share_extension:  
    git:  
-     url: https://github.com/dinkerkis/share_extension_flutter.git
+     url: https://github.com/samreenkaur/flutter_share_extension.git
 ``` 
 
 ## 2. Add package
 
 ``` 
-import 'package:share_extension_flutter/share_extension_flutter.dart';
+import 'package:flutter_share_extension/flutter_share_extension.dart';
 
 ``` 
 
@@ -66,7 +66,7 @@ import 'package:share_extension_flutter/share_extension_flutter.dart';
 ## 3.  Use in the code like this:
 
 ``` 
-ShareExtensionFlutter(
+ShareExtension(
         shouldShowAppBar: false,
         appBarTitle: "Share Extension Post",
         shouldPreview: true,
@@ -121,7 +121,7 @@ ShareExtensionFlutter(
 
 ## 5. Errors??
 
-Please check the dependencies in pubspec.yaml file and check their implementation one by one. Espacially,
+Please check the dependencies in pubspec.yaml file and check their implementation one by one. Especially,
 receive_sharing_intent: any
 url_launcher: any
 
