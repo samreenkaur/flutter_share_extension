@@ -1,7 +1,4 @@
 library flutter_share_extension;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'package:flutter_share_extension/share_extension.dart';
+export 'package:flutter_share_extension/video_widget.dart';
